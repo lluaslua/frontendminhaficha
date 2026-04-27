@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider/theme-provider";
 
 const PoppinsSans = Poppins({
   variable: "--font-Poppins-sans",
@@ -22,8 +23,19 @@ export default function RootLayout({
     <html
       lang="pt-br"
       className={`${PoppinsSans.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+          
+        >
+          {children}
+        </ThemeProvider>
+        </body>
     </html>
   );
 }
