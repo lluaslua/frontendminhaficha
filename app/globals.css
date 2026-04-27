@@ -166,4 +166,17 @@
   html {
     @apply font-sans;
   }
+
+  h1 {
+    @apply text-ds-h1;
+  }
+  h2 {
+    @apply text-ds-h2;
+  }
+  h3 {
+    @apply text-ds-h3;
+  }
+  p {
+    @apply text-ds-body-base;
+  }
 }
