@@ -44,7 +44,7 @@ export type SpellLevelType =
   | "1 HOUR";
 
 
-interface CharacterSheet {
+export interface CharacterSheet {
     id: number;
     name: string;
     playerClass: string;
