@@ -1,4 +1,48 @@
-export type TypeOfDamage = "ACID" | "BLUDGEONING" | "COLD" | "FIRE" | "FORCE" | "LIGHTNING" | "NECROTIC" | "POISON" | "PSYCHIC" | "RADIANT" | "THUNDER" | "SLASHING" | "PIERCING";   
+export type TypeOfDamage = 
+"ACID" 
+| "BLUDGEONING" 
+| "COLD" 
+| "FIRE" 
+| "FORCE" 
+| "LIGHTNING" 
+| "NECROTIC" 
+| "POISON" 
+| "PSYCHIC" 
+| "RADIANT" 
+| "THUNDER" 
+| "SLASHING" 
+| "PIERCING";   
+
+export type MagicSchool = 
+  | "ABJURATION" 
+  | "CONJURATION" 
+  | "DIVINATION" 
+  | "ENCHANTMENT" 
+  | "EVOCATION" 
+  | "ILLUSION" 
+  | "NECROMANCY" 
+  | "TRANSMUTATION";
+
+export type SpellLevelType = 
+  | "CANTRIP" 
+  | "1ST LEVEL" 
+  | "2ND LEVEL" 
+  | "3RD LEVEL" 
+  | "4TH LEVEL" 
+  | "5TH LEVEL" 
+  | "6TH LEVEL" 
+  | "7TH LEVEL" 
+  | "8TH LEVEL" 
+  | "9TH LEVEL";
+
+  export type CastingTime = 
+  "1 ACTION" 
+  | "1 BONUS ACTION" 
+  | "1 REACTION" 
+  | "1 MINUTE" 
+  | "10 MINUTES" 
+  | "1 HOUR";
+
 
 interface CharacterSheet {
     id: number;
@@ -53,7 +97,13 @@ export interface PlayerSpell{
     id: number;
     level: number;
     name: string;
+    type: "Transmutation cantrip",
+    castingTime: CastingTime,
+    range: Range,
+    components: string,
+    duration: string,
     description: string;
+    
     sheet?: Omit<CharacterSheet, "spells">;
 }
 
