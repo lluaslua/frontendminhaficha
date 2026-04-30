@@ -4,12 +4,6 @@
   "playerClass": "Druida",
   "level": 4,
   "playerRace": "Firbolg",
-  "strength": 14,
-  "dexterity": 19,
-  "constitution": 18,
-  "intelligence": 8,
-  "wisdom": 20,
-  "charisma": 15,
   "armor": 15,
   "initiative": 4,
   "speed": 9,
@@ -24,6 +18,44 @@
   "electrumPieces": 0,
   "silverPieces": 0,
   "copperPieces": 0,
+  "attributes": [
+    {
+      "id": 1,
+      "name": "Força",
+      "score": 14,
+      "modifier": 2
+    },
+    {
+      "id": 2,
+      "name": "Destreza",
+      "score": 19,
+      "modifier": 4
+    },
+    {
+      "id": 3,
+      "name": "Constituição",
+      "score": 18,
+      "modifier": 2
+    },
+    {
+      "id": 4,
+      "name": "Inteligência",
+      "score": 8,
+      "modifier": -1
+    },
+    {
+      "id": 5,
+      "name": "Sabedoria",
+      "score": 20,
+      "modifier": 5
+    },
+    {
+      "id": 6,
+      "name": "Carisma",
+      "score": 15,
+      "modifier": 2
+    }
+  ],
   "equipments": [
     {
       "id": 1,
