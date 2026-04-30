@@ -1,5 +1,6 @@
 import SheetHeader from "@/components/sheet-header/SheetHeader";
 import { CharacterSheet } from "@/types/character-sheet.types";
+import PlayerAttributes  from "@/components/player-attributes/PlayerAttributes";
 
 
 async function getCharacterSheet(): Promise<CharacterSheet[]>{
@@ -22,7 +23,7 @@ export default async function Home() {
         {characterSheets.map((sheet) =>(
           <div key={sheet.id} className="w-full">
             <SheetHeader data={sheet} />
-    
+            <PlayerAttributes data={sheet}/>
           </div>
         ))}
       </div>

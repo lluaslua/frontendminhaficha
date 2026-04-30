@@ -70,6 +70,7 @@ export interface CharacterSheet {
     electrumPieces: number;
     silverPieces: number;
     copperPieces: number;
+    attributes: PlayerAttributes[];
     equipments: PlayerEquipment[];
     languages: PlayerLanguage[];
     spells: PlayerSpell[];
@@ -127,3 +128,11 @@ export interface PlayerSkill{
     bonus: number;
     isProeficient: boolean;
 }
+
+export interface PlayerAttributes{
+
+    id: number;
+    name: string;
+    score: number;
+    modifier: number;
+} 
