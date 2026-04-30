@@ -18,17 +18,14 @@ export default async function Home() {
   const characterSheets = await getCharacterSheet();
 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center d:arkbg-black">
-      <SheetHeader/>
-      <div>
+    <div className="d:arkbg-black w-[90%] m-auto">
         {characterSheets.map((sheet) =>(
-          <div key={sheet.id}>
-            <h1>{sheet.name}</h1>
-            <h1 className="text-4xl">{sheet.name}</h1>
+          <div key={sheet.id} className="w-full">
+            <SheetHeader data={sheet} />
+    
           </div>
         ))}
-
       </div>
-    </div>
+    
   );
 }
