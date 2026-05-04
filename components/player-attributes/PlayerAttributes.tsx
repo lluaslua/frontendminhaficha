@@ -3,10 +3,7 @@
 import { CharacterSheet } from "@/types/character-sheet.types";
 import { Card } from "../ui/card";
 import { modifierFormatter } from "@/utils/atribute-utils";
-
-interface AttributeProps{
-    data: CharacterSheet;
-}
+import { AttributeProps } from "@/types/data-sheet.types";
 
 export default function PlayerAttributes({data}: AttributeProps){
     const attributes = data.attributes;

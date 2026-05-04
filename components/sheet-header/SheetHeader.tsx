@@ -5,11 +5,8 @@ import { Card } from "../ui/card"
 import { CharacterSheet } from "@/types/character-sheet.types"
 import { Button } from "../ui/button";
 import { Pen, PenLine  } from "lucide-react"
+import { SheetHeaderProps } from "@/types/data-sheet.types";
 
-interface SheetHeaderProps{
-    data: CharacterSheet;
-    icon?: ElementType;
-}
 
 export default function SheetHeader({ data, icon: Icon }: SheetHeaderProps) {
 
